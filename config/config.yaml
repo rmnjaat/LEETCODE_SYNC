@@ -1,0 +1,30 @@
+# LeetCode to GitHub Sync Configuration
+
+leetcode:
+  username: "rmn_jaat" 
+  base_url: "https://leetcode.com"
+  api_endpoint: "https://leetcode.com/graphql"
+
+github:
+  username: "rmnjaat"  # Your GitHub username
+  repository: "leetcode-solutions"  # Repository name (will be auto-created if doesn't exist)
+  branch: "main"
+  base_path: ""  # Root of repo, or "solutions/" for subfolder
+
+sync_settings:
+  days_to_look_back: 30  # Number of days to look back (0 = all time)
+  only_accepted: true    # Only sync accepted submissions
+  keep_all_versions: true  # Keep multiple solutions for same problem
+  version_naming: "sequential"  # Options: "sequential", "timestamp"
+  
+  # File naming patterns
+  file_patterns:
+    sequential: "{problem_slug}_v{version}.{ext}"
+    timestamp: "{problem_slug}_{timestamp}.{ext}"
+    single: "{problem_slug}.{ext}"
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/sync.log"
+  console: true
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

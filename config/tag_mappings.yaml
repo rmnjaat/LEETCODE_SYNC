@@ -1,0 +1,43 @@
+# Tag to folder mappings
+# Flexible configuration - change folder names as needed!
+
+tag_mappings:
+  # LeetCode Tag Name : GitHub Folder Name
+  Database: "Databases"
+  Array: "Arrays"
+  String: "Strings"
+  "Dynamic Programming": "Dynamic-Programming"
+  Tree: "Trees"
+  Graph: "Graphs"
+  "Linked List": "Linked-Lists"
+  "Binary Search": "Binary-Search"
+  "Depth-First Search": "DFS"
+  "Breadth-First Search": "BFS"
+  Backtracking: "Backtracking"
+  Greedy: "Greedy"
+  "Two Pointers": "Two-Pointers"
+  Math: "Math"
+  "Bit Manipulation": "Bit-Manipulation"
+  Heap: "Heaps"
+  Stack: "Stacks"
+  Queue: "Queues"
+  Design: "System-Design"
+  Sorting: "Sorting"
+  Hashing: "Hashing"
+
+# Active tags (only these will be synced)
+active_tags:
+  - "Database"  # Currently only Database
+  # Uncomment below to add more tags:
+  # - "Array"
+  # - "Dynamic Programming"
+  # - "Tree"
+
+# Behavior when problem has multiple tags
+multi_tag_behavior: "primary"  # Options: "primary", "all", "first"
+# primary: Use first tag from active_tags that matches
+# all: Save in all matching folders (duplicate file)
+# first: Use first tag found in problem
+
+# Default folder for unmatched tags
+default_folder: "Others"
